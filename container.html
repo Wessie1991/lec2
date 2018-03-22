@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style media="screen">
+      .container{
+        display: flex;
+        flex-wrap:  wrap;
+      }
+
+      .container > div{
+        background-color: springgreen;
+        font-size: 20px;
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+
+      }
+
+      .grid{
+        background-color: green;
+        display: grid;
+        padding: 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        grid-template-columns: 200px 200px auto;
+
+      }
+      .grid-item{
+        background-color: lightblue;
+        font-size: 20;
+        text-align: center;
+        padding: 10px; 
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Page Title</title>
+    </head>
+    <body>
+
+      <div class="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+      </div>
+
+      <div class="container">
+        <div >A</div>
+        <div >B</div>
+        <div >C</div>
+        <div >D</div>
+        <div >E</div>
+        <div >F</div>
+        <div >G</div>
+        <div >H</div>
+      </div>
+
+
+
+    </body>
+</html>

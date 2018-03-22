@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block heading %} tweede pagina {% endblock %}
+
+{% block body %}
+  <p> dit is de twee de pagina met de opmaak het zelfde als de eerste</p>
+  <p> wat is de waarde van de vorige  pagina:  <b>{{ name }}</b></p>
+  <a href="{{ url_for('een') }}"> ga naar pagina een ...</a>
+{% endblock body %}

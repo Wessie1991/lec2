@@ -1,0 +1,71 @@
+h1 , h2 {
+  color: red;
+}
+
+ol li {
+  /* tip: alleen de elelemnten die onderdeel zijn ol worden rood gekleurt  */
+  color: blue;
+
+}
+ol > li {
+  /* TODO: alleen de eerst child wordt opgemaakt */
+  color: Red;
+  font-weight: bold;
+
+}
+
+form.input input[type=text]{
+  background-color: Red;
+}
+form.input input[type=number]{
+  background-color: yellow;
+}
+
+button{
+  width: 90px;
+  height: 30px;
+  font-size: 20;
+  background-color: green;
+}
+button:hover{
+  background-color: red;
+}
+
+a::before{
+  content: '\21d2 Click here  ';
+  font-weight: bold;
+}
+a::after{
+  content: ' we gaan!!';
+  color: blue;
+}
+p::selection{
+  color: red;
+  background-color: yellow;
+}
+
+@media print {
+  .screen-only{
+    display: none;
+  }
+
+
+}
+@media (min-width: 500px) {
+  h1::before{
+    content: 'hallo op de grote website';
+    color: green;
+  }
+  body{
+    background-color: red;
+  }
+}
+@media (max-width: 499px) {
+  h1::before{
+    content: 'hallo op de kleine website';
+    color: black;
+  }
+  body{
+    background-color: blue;
+  }
+}
